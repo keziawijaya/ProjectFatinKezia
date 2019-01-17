@@ -1,5 +1,3 @@
-package planegeometrycalculator;
-
 import java.util.Scanner;
 
 public class PlaneGeometryCalculator {
@@ -21,6 +19,7 @@ public class PlaneGeometryCalculator {
         System.out.println("(7) Lingkaran");
         System.out.println("(8) Segitiga");
         System.out.println("(9) Quit");
+	System.out.println("Input option : ");
         op= input.nextInt();
         switch(op){
             case 1 : 
@@ -48,13 +47,17 @@ public class PlaneGeometryCalculator {
                 segitiga();
                 break;
             case 9 : 
-                System.exit(0);
+                Exit();
                 break;
             default :
                 System.out.println("Invalid option");
                 menu();
                 break;
         }
+    }
+
+    public void Exit() {
+	    System.exit(0);
     }
     
     public void persegi() {
